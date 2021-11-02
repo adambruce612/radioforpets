@@ -1,0 +1,106 @@
+//Include Normalize CSS code
+@use "reset";
+
+/* CSS Document */
+
+/*light cornflower-199, 64%, 73%
+blue green-192, 70%, 43%
+honey yellow-43, 100%, 51%
+
+/*https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 light conflower, blue green, honey yellow
+https://coolors.co/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff*/
+
+body {
+    background-color: hsla(200, 95%, 14%, 1);
+}
+
+.wrapper {
+    max-width: 960px;
+    width: 96%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: hsla(192, 70%, 43%, 1);
+    display: grid;
+    grid-template-columns: repeat(2, [column] 1fr);
+}
+
+main {
+    grid-column: span 2;
+}
+
+h1 {
+    position: absolute;
+    top: -3000px;
+    left: -3000px;
+    margin: 0px;
+    transform: xindex
+}
+
+img {
+    display: block;
+    height: 300px;
+    width: auto;
+    margin: auto;
+}
+
+#logo {
+    margin-top: 0;
+}
+
+#badyear {
+    border: 2px solid white;
+    margin-bottom: 20px;
+
+}
+
+
+
+#spotify,
+#youtube {
+    align-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#spotify:hover,
+#youtube:hover {
+    border-radius: 0px;
+}
+
+#spotify {
+    background-color: green;
+}
+
+#youtube {
+    background-color: red;
+}
+
+
+
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+table {
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    padding-right: 20px;
+    color: white;
+    height: 50px;
+}
