@@ -12,13 +12,13 @@ https://coolors.co/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff*/
 
 body {
     background-color: hsla(200, 95%, 14%, 1);
+    font-family: 'Oswald', sans-serif;
 }
 
 .wrapper {
     max-width: 960px;
     width: 96%;
     margin: auto;
-    margin-top: 20px;
     background-color: hsla(192, 70%, 43%, 1);
     display: grid;
     grid-template-columns: repeat(2, [column] 1fr);
@@ -53,19 +53,47 @@ img {
 
 }
 
-span {
+#badyearbuttons {
     grid-column: span 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
 
+#badyearbuttons .icon-spotify {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: #fff;
+    fill: #fff;
+    vertical-align: middle;
+    margin-right: .5em;
+}
+
+#badyearbuttons .icon-youtube {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: #fff;
+    fill: #fff;
+    vertical-align: middle;
+    margin-right: .5em;
 }
 
 #spotify,
 #youtube {
-    padding: 10px;
+    padding: 5px;
+    padding-right: 10px;
     border-radius: 10px;
     border: 2px solid white;
     color: white;
     text-align: center;
-    margin: auto;
+    margin: 10px;
+    vertical-align: center;
+    font-size: 1.15em;
 }
 
 #spotify:hover,
@@ -85,6 +113,7 @@ h2 {
     margin-top: 50px;
     text-align: center;
     text-decoration: underline;
+    font-size: 1.75em;
 }
 
 table {
@@ -118,7 +147,8 @@ td {
 
 .icon-facebook2,
 .icon-instagram,
-.icon-spotify {
+.icon-spotify,
+.icon-youtube {
     width: 2em;
     height: 2em;
     fill: #fff;
