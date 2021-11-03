@@ -1,6 +1,3 @@
-//Include Normalize CSS code
-@use "reset";
-
 /* CSS Document */
 
 /*light cornflower-199, 64%, 73%
@@ -9,6 +6,9 @@ honey yellow-43, 100%, 51%
 
 /*https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 light conflower, blue green, honey yellow
 https://coolors.co/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff*/
+
+//Include Normalize CSS code
+@use "reset";
 
 body {
     background-color: hsla(200, 95%, 14%, 1);
@@ -53,18 +53,19 @@ img {
 
 }
 
+span {
+    grid-column: span 2;
 
+}
 
 #spotify,
 #youtube {
-    align-self: center;
     padding: 10px;
     border-radius: 10px;
     border: 2px solid white;
     color: white;
     text-align: center;
     margin: auto;
-    justify-content: space-between;
 }
 
 #spotify:hover,
@@ -80,8 +81,6 @@ img {
     background-color: red;
 }
 
-
-
 h2 {
     margin-top: 50px;
     text-align: center;
@@ -90,17 +89,39 @@ h2 {
 
 table {
     margin: auto;
-    border: 2px solid black;
     margin-bottom: 10px;
 }
 
-.socialmedia {
-    display: flex;
-    justify-content: center;
+td {
+    padding: 20px;
 }
 
-svg {
-    padding-right: 20px;
-    color: white;
-    height: 50px;
+.socialmedia {
+    grid-column: span 2;
+    text-align: center;
+    overflow: hidden;
+}
+
+.socialmedia a {
+    color: hsla(192, 70%, 43%, 1);
+}
+
+
+.icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.icon-facebook2,
+.icon-instagram,
+.icon-spotify {
+    width: 2em;
+    height: 2em;
+    fill: #fff;
+    padding: 2px;
+    margin-right: 2px;
 }
