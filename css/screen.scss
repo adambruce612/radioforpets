@@ -33,7 +33,6 @@ h1 {
     top: -3000px;
     left: -3000px;
     margin: 0px;
-    transform: xindex
 }
 
 img {
@@ -94,6 +93,7 @@ img {
     margin: 10px;
     vertical-align: center;
     font-size: 1.15em;
+    cursor: pointer;
 }
 
 #spotify:hover,
@@ -101,12 +101,17 @@ img {
     border-radius: 0px;
 }
 
+#spotify:active,
+#youtube:active {
+    border: 2px solid #023047;
+}
+
 #spotify {
     background-color: green;
 }
 
 #youtube {
-    background-color: red;
+    background-color: #ff0000;
 }
 
 h2 {
@@ -119,6 +124,14 @@ h2 {
 table {
     margin: auto;
     margin-bottom: 10px;
+}
+
+table a:hover {
+    color: white;
+}
+
+table a:active {
+    color: #023047;
 }
 
 td {
@@ -143,6 +156,15 @@ td {
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
+}
+
+
+.icon:hover {
+    fill: #ffb703;
+}
+
+.icon:active {
+    fill: #023047;
 }
 
 .icon-facebook2,
