@@ -6,51 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radio For Pets</title>
-    <link rel="stylesheet" href="css/screen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <div class="wrapper">
+        <nav class="mobile-nav navbar">
+            <div class="collapsed">
+            <a href="#"><img src="images/logo.png" id="mobile-logo" alt="Radio For Pets Logo"></a>
+            <svg id="hamburgerIcon" viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+        </div>
+            <div id="mobile-nav-items">
+                <a href="#home" id="mobile-nav-home">Home</a>
+                <a href="#music" id="mobile-nav-music">Music</a>
+                <a href="#tour" id="mobile-nav-tour">Tour</a>
+                <a href="#about" id="mobile-nav-about">About</a>
+                <a href="#contact" id="mobile-nav-contact">Contact</a>
+                <a href="#social-media" id="mobile-nav-connect">Connect</a>
+            </div> 
+        </nav>
+        <nav class="main-nav navbar">
+            <div id="main-nav-items">
+                <a href="#">Home</a>
+                <a href="#music">Music</a>
+                <a href="#tour">Tour</a>
+                <a href="#home"><img src="images/logo.png" id="desktop-logo" alt="Radio For Pets Logo"></a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#social-media">Connect</a>
+            </div>
+        </nav>
+
         <main>
-            <h1>Radio For Pets</h1>
-            <img id="logo" src="images/logo.png" alt="Radio For Pets Logo">
-            <img id="badyear" src="images/badyear.png" alt="Radio For Pets Bad Year album artwork">
-            <span id="badyearbuttons">
-                <a id="spotify" href="https://open.spotify.com/artist/1MTQHlw8T8Jmymp1yXVLnP?si=yJ1p6sMVRJGZVbq1rA77sw">
-                    <svg class="icon icon-spotify">
-                        <use href="#icon-spotify"></use>
-                    </svg>Spotify</a>
-                <a id="youtube" href="https://youtu.be/_62PGKiHphI"><svg class="icon icon-youtube">
-                        <use href="#icon-youtube"></use>
-                    </svg>YouTube</a>
-            </span>
-            <h2>Tour Dates</h2>
-            <table>
-                <tr>
-                    <td>3/17/2023</td>
-                    <td>LaVie Tavern</td>
-                    <td>De Pere, WI</td>
-                    <td><a href="https://www.facebook.com/events/482842330696609/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22home%22%7D%2C%7B%22mechanism%22%3A%22search_results%22%2C%22surface%22%3A%22search%22%7D]%2C%22ref_notif_type%22%3Anull%7D">More Info</a></td>
-                </tr>
-                <tr>
-                    <td>4/1/2023</td>
-                    <td>Lyric Room</td>
-                    <td>Green Bay, WI</td>
-                    <td><a href="https://www.facebook.com/events/1137040483671504">More Info</a></td>
-                </tr>
-                <tr>
-                    <td>6/3/2023</td>
-                    <td>Missfits</td>
-                    <td>Appleton, WI</td>
-                    <td><a href="https://www.facebook.com/events/3604952536454679">More Info</a></td>
-                </tr>
-            </table>
-        </main>
-        <footer class="socialmedia">
-            <p> <a href="https://facebook.com/radioforpets">
+            <section id="music">
+                <h2>MUSIC</h2>
+                <div class="music-cards">
+                    <div class="music-card">
+                        <img src="images/onehitterwonder.jpg" alt="One Hitter Wonder album artwork">
+                        <div class="music-card-listen-button">
+                        <a href="https://open.spotify.com/album/5uD3QtZGeebMGGuwzSEDuH?si=2NgyOzhPRXCHouffM193iw" class="listenBtn">Listen</a>
+                    </div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/badyear.png" alt="Billy Block and the Terrible, Horrible, No Good, Very Bad Year album artwork">
+                        <div class="music-card-listen-button">
+                        <a href="listen/badyear/index.html" class="listenBtn">Listen</a>
+                    </div>
+                    </div>
+                </div>
+            </section>
+           <!-- <section id="tour">
+                <h2>Tour Dates</h2>
+                <div class="tour-cards">
+                        <div class="tour-card">
+                            <h3>October 28, 2023</h3>
+                                <p>At The Tracks</p>
+                                <p>713 South Broadway Street</p>
+                                <p>Green Bay, WI</p>
+                                <div class="more-info">
+                                    <a href="https://www.facebook.com/events/859182939104571/?ref=newsfeed">More Info</a>
+                                </div>
+                            </div>
+                </div>
+            </section>  --> 
+            <section id="images">
+                <h2>Images</h2>
+                <div class="images">
+                        <img src="images/EPKPics/live1.jpg" alt="A picture of Radio For Pets performing a concert.">
+                        <img src="images/EPKPics/live2.jpg" alt="A picture of Radio For Pets performing a concert.">
+                        <img src="images/EPKPics/live3.jpg" alt="A picture of Radio For Pets performing a concert.">
+                        <img src="images/EPKPics/live4.jpg" alt="A picture of Radio For Pets performing a concert.">
+                        <img src="images/EPKPics/live5.jpg" alt="A picture of Radio For Pets performing a concert.">
+                        <img src="images/EPKPics/live6.png" alt="A picture of Radio For Pets performing a concert.">
+                </div>
+            </section>   
+            <section class="about">
+                <h2>ABOUT</h2>
+                <p>Since their formation in 2019, Radio For Pets has been bringing you an eclectic blend of emo and pop punk. Based out of Green Bay, Wisconsin, they've been playing
+                    shows, growing their following all across the state. Radio For Pets has had the pleasure of being interviewed by and featured on Devile Radio (97.2FM) out of 
+                    Madison, Wisconsin this past winter. They have also opened for Fox Royale, a nationally touring pop-punk band.
+                </p>
+            </section>
+            <section class="contact">
+                <h2>CONTACT</h2>
+                <p><a href="mailto:booking@radioforpets.com">booking@radioforpets.com</a></p>
+            </section>
+            <section class="social-media">
+                <h2>Connect</h2>
+                <p> <a href="https://facebook.com/radioforpets">
                     <svg class="icon icon-facebook2">
                         <use href="#icon-facebook2"></use>
                     </svg>
@@ -71,7 +124,8 @@
                     </svg>
                 </a>
             </p>
-        </footer>
+        </section>
+        </main>
         <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
@@ -104,6 +158,7 @@
             </defs>
         </svg>
     </div>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
