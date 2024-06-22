@@ -149,8 +149,8 @@ p {
 }
 
 .images img {
-    width: 300px;
-    height: 250px;
+    height: auto;
+    width: 400px;
 }
 
 .music-card, .tour-card {
